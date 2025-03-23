@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarita's Portfolio | Web Developer & UI/UX Designer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Start Header -->
+    <header id="header">
+        <div class="nav-container">
+            <a href="#" class="logo">S<span>M</span></a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+                <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+                <li class="nav-item"><a href="#certifications" class="nav-link">Certifications</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Start Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-name">Hi, I'm <span class="text-highlight">Sarita Mukkani</span></h1>
+                    <h2 class="hero-title">Web Developer & UI/UX Designer</h2>
+                    <p class="hero-description">I design and build user interfaces that are both beautiful and functional, ensuring seamless user experiences and enhanced usability.</p>
+                    <a href="#contact" class="btn hero-btn">Get In Touch</a>
+                </div>
+                <div class="hero-img">
+                    <img src="myimage.jpeg" alt="Profile Image"class="profile-image">
+                </div>
+            </div>
+        </div>
+    </section>
+<style>
+    .profile-image {
+    width: 75%; /* Adjust size as needed */
+    height: 70%;
+    border-radius: 50%; /* Makes it a circle */
+    object-fit: cover; /* Ensures the image fits well */
+    border: 4px solid #6c5ce7; /* Adds a border with your theme color */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+    transition: transform 0.3s ease-in-out; /* Smooth hover effect */
+}
+
+.profile-image:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+</style>
+<!-- End Hero Section -->
+
+    <!-- Start About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-container">
+                <div class="about-content">
+                    <h3 class="about-title">Passionate Tech Professional</h3>
+                    <p class="about-text">I am a UI/UX Designer & Web Developer skilled in HTML, CSS, JavaScript, and design tools like Figma, Canva, and Wix. I specialize in creating responsive, user-friendly interfaces while enhancing usability. With experience in software testing, documentation, and user research, I focus on blending design with functionality to build impactful digital solutions. 🚀✨</p>
+                    <a href="#skills" class="btn">Explore My Skills</a>
+                </div>
+                <!-- <div class="about-img">
+                    <img src="/api/placeholder/500/300" alt="About Me">
+                </div> -->
+            </div>
+        </div>
+    </section>
+<style>
+/* About Section */
+    #about {
+        background-color: #f8f9fc; /* Light background */
+        padding: 80px 0;
+        /* text-align: center; */
+    }
+    
+    .section-title {
+        font-size: 24px;
+        font-weight: bold;
+        color: #333;
+        text-transform: uppercase;
+        position: relative;
+        display: inline-block;
+    }
+    
+    .section-title::after {
+        content: "";
+        display: block;
+        width: 50px;
+        height: 3px;
+        background-color: #6c63ff; /* Highlight color */
+        margin: 8px auto 0;
+        border-radius: 5px;
+    }
+    
+    .about-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        max-width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    .about-content {
+        background: white;
+        padding: 40px;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .about-title {
+        font-size: 28px;
+        font-weight: bold;
+        color: #222;
+        margin-bottom: 15px;
+    }
+    
+    .about-text {
+        font-size: 16px;
+        color: #555;
+        line-height: 1.8;
+    }
+    
+    .btn {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 12px 24px;
+        background-color: #6c63ff;
+        color: #fff;
+        font-weight: bold;
+        border-radius: 8px;
+        text-decoration: none;
+        transition: 0.3s ease-in-out;
+    }
+    
+    .btn:hover {
+        background-color: #8c88d49e;
+    }
+    /* About Section */
+    </style>
+    <!-- Start About Section -->
+
+
+    <!-- Start Skills Section -->
+    <section id="skills" class="section" style="background-color: #f5f7fa;">
+        <div class="container">
+            <h2 class="section-title">My Skills</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> Programming Languages</h3>
+                    <ul class="skill-list">
+                        <li class="skill-item">HTML5</li>
+                        <li class="skill-item">CSS</li>
+                        <li class="skill-item">JavaScript</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-database"></i> Database Management</h3>
+                    <ul class="skill-list">
+                        <li class="skill-item">Basic's of MySQL</li>
+                        <li class="skill-item">Basic's of Excel</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-pencil-ruler"></i> UI/UX Tools</h3>
+                    <ul class="skill-list">
+                        <li class="skill-item">Figma</li>
+                        <li class="skill-item">Canva</li>
+                        <li class="skill-item">Wix</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-brain"></i> Soft Skills</h3>
+                    <ul class="skill-list">
+                        <li class="skill-item">Problem-solving</li>
+                        <li class="skill-item">Analytical Thinking</li>
+                        <li class="skill-item">Team Collaboration</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+<style>
+/* Skills Section */
+    #skills {
+        background-color: #f5f7fa; /* Light background */
+        padding: 80px 0;
+        text-align: center;
+    }
+    
+    .section-title {
+        font-size: 24px;
+        font-weight: bold;
+        color: #333;
+        text-transform: uppercase;
+        position: relative;
+        display: inline-block;
+    }
+    
+    .section-title::after {
+        content: "";
+        display: block;
+        width: 50px;
+        height: 3px;
+        background-color: #6c63ff; /* Accent color */
+        margin: 8px auto 0;
+        border-radius: 5px;
+    }
+    
+    .skill-category:hover {
+        transform: translateY(-5px);
+    }
+    
+    .skill-category h3 {
+        font-size: 20px;
+        font-weight: bold;
+        color: #222;
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        justify-content: center;
+    }
+    
+    .skill-category h3 i {
+        color: #6c63ff; /* Icon color */
+        font-size: 22px;
+    }
+    
+    .skill-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    
+    .skill-item:hover {
+        background: #dce3f1;
+        color: #333;
+    }
+/* Skills Section */
+    </style>
+<!-- Skills Section -->
+
+    <!-- Start Experience Section -->
+    <section id="experience" class="section">
+        <div class="container">
+            <h2 class="section-title">Work Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">Jan 2025 - March 2025</div>
+                        <h3 class="timeline-title">Web Developer and UI/UX Intern</h3>
+                        <h4>Fitisatn</h4>
+                        <div class="timeline-description">
+                            <ul>
+                                <li>Designed website UI/UX and documentation for an upcoming application launch.</li>
+                                <li>Proposed usability improvements based on user feedback.</li>
+                                <li>Developed scalable UI/UX solutions for optimizing the user experience.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">May 2024 - Aug 2024</div>
+                        <h3 class="timeline-title">Software Testing and UI/UX Intern</h3>
+                        <h4>Invizio Solutions</h4>
+                        <div class="timeline-description">
+                            <ul>
+                                <li>Conducted comprehensive application testing, created detailed test cases, and tracked defects using Excel.</li>
+                                <li>Proposed usability improvements based on user feedback.</li>
+                                <li>Developed UI/UX solutions to enhance user experience.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">Dec 2023 - Feb 2024</div>
+                        <h3 class="timeline-title">UI/UX Intern</h3>
+                        <h4>Engaze</h4>
+                        <div class="timeline-description">
+                            <ul>
+                                <li>Designed wireframes and interactive prototypes using <strong>Figma</strong> and <strong>Canva</strong>.</li>
+                                <li>Ensured seamless user experience by aligning designs with user needs and feedback.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">Aug 2021 - Sep 2021</div>
+                        <h3 class="timeline-title">Web Developer Intern</h3>
+                        <h4>Sahu Technologies Pvt. Ltd.</h4>
+                        <div class="timeline-description">
+                            <ul>
+                                <li>Assisted in developing web modules using <strong>HTML and CSS</strong>.</li>
+                                <li>Conducted software testing to ensure <strong>cross-browser compatibility</strong>.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Experience Section -->
+
+    <!-- Start Education Section -->
+    <section id="education" class="section" style="background-color: #f5f7fa;">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="education-container">
+                <div class="education-item">
+                    <h3 class="education-degree">B.Tech in Computer Science</h3>
+                    <p class="education-school">Atharva College Of Engineering</p>
+                    <p class="education-years">2022 - 2025</p>
+                    <p class="education-grade">CGPA: 8.7/10</p>
+                </div>
+                <div class="education-item">
+                    <h3 class="education-degree">Diploma in Computer Science</h3>
+                    <p class="education-school">Vdiyalankar Polytechnic</p>
+                    <p class="education-years">2019 - 2022</p>
+                    <p class="education-grade">Percentage: 85.94%</p>
+                </div>
+                <!-- <div class="education-item">
+                    <h3 class="education-degree">High School Education</h3>
+                    <p class="education-school">Fatima High School</p>
+                    <p class="education-years">2014 - 2017</p>
+                    <p class="education-grade">Percentage: 82%</p>
+                </div> -->
+            </div>
+        </div>
+    </section>
+    <!-- Start Education Section -->
+
+    <!-- Start Certifications Section -->
+    <section id="certifications" class="section">
+        <div class="container">
+            <h2 class="section-title">Certifications</h2>
+            <div class="certifications-container">
+                <div class="certification-item">
+                    <h3 class="certification-title">SIH Inter College Competition <br>2nd Prize Winner</h3>
+                    <p class="certification-date">Mumbai - September 2024</p>
+                    <p>Presented an IoT Project Smart Irrigation System, won 2nd Prize and Money on Sep 09, 2024.</p>
+                </div>
+                <div class="certification-item">
+                    <h3 class="certification-title">CSI Product Project Competition <br> 1st Prize Winner</h3>
+                    <p class="certification-date"> Mumbai - August 2024</p>
+                    <p>Presented an IoT Project Agrodew, won 1st Prize and Money on August 12, 2024.</p>
+                </div>
+                <div class="certification-item">
+                    <h3 class="certification-title">SheCodes Hackathon<br> Certificate of Appreciation </h3>
+                    <p class="certification-date">Bangalore - June 2024</p>
+                    <p>Developed Project ”She-Shield a hardware device developed using IoT for women's safety ” on June 14-15, 2024.</p>
+                </div>
+                <div class="certification-item">
+                    <h3 class="certification-title">Google Developers Student Club <br> UI/UX Team Member</h3>
+                    <p class="certification-date">May 2023 - April 2024</p>
+                    <p>Spearheaded user interface and experience initiatives as a member of GDSC, facilitating seamless collaboration
+                        between design and development teams to deliver intuitive and visually appealing digital solutions.</p>
+                </div>
+                <div class="certification-item">
+                    <h3 class="certification-title">Vidyalankar Internal Hackathon <br> Second Runner-Up</h3>
+                    <p class="certification-date">Mumbai - March 202</p>
+                    <p>Solved problem statement provided by sponsoring company Soft Scribble Pvt Ltd.</p>
+                </div>
+                <div class="certification-item">
+                    <h3 class="certification-title">ICSTEMSD 2024-2nd Edition</h3>
+                    <p class="certification-date">Mumbai - Feburary 2024</p>
+                    <p> Presented a paper titled "DUTY MONITOR: Monitoring System Using NFC, published in ISTE Online Special Issue No. 2, Vol. 47 on February 15-16, 2024.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Start Certifications Section -->
+
+
+    <!-- Start Projects Section -->
+    <section id="projects" class="section" style="background-color: #f5f7fa;">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="projects-container">
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="farmer.jpeg" alt="AgroDew">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">AgroDew</h3>
+                        <p class="project-description">This project provides smart irrigation system that uses sensors to monitor soil moisture and temperature. This
+                            data is transmitted to farmers via a mobile app, enabling them to remotely control irrigation systems and optimize
+                            water usage.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">IoT Development</span>
+                            <span class="tech-tag">Embedded Systems</span>
+                            <span class="tech-tag">Wireless Communication</span>
+                            <span class="tech-tag">Automation</span>
+                            <span class="tech-tag">Sensor Integration/span>
+
+                        </div>
+                        <div class="project-links">
+                            <a href="https://www.youtube.com/@AgroDew/videos" class="btn">View Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="womens.jpeg" alt="SheShield">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">SheShield</h3>
+                        <p class="project-description">Women often lack a discreet and accessible safety device. Existing solutions are typically bulky, inconvenient, or
+                            require a smartphone. There's a pressing need for a wearable option that provides immediate access to safety
+                            features in dangerous situations.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Figma</span>
+                            <span class="tech-tag">UI/UX</span>
+                            <span class="tech-tag">Prototyping</span>
+                            <span class="tech-tag">IoT Development</span>
+                            <span class="tech-tag">Embedded Systems</span>
+                            <span class="tech-tag">Wireless Communication</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/saritamukkani/She-Shield-Shecodes2024-" class="btn">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="project-card">
+                    <div class="project-img">
+                        <img src="/api/placeholder/350/200" alt="Task Manager App">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Task Manager Web App</h3>
+                        <p class="project-description">Developed a task management application that allows users to create, organize, and track their daily tasks with reminder functionality.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Local Storage</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn">View Demo</a>
+                        </div>
+                    </div>
+                </div> -->
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="Duty.jpeg" alt="Duty Monitor">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Duty Monitor</h3>
+                        <p class="project-description">Duty Monitor is a project leveraging NFC technology to track the location of employees within a workplace,
+                            enhancing organizational performance. By equipping staff with NFC-enabled smartphones and strategically placing
+                            NFC readers, the system facilitates real-time monitoring and immediate location retrieval.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Software Development</span>
+                            <span class="tech-tag">Project Management & Deployment</span>
+                            <span class="tech-tag">Figma</span>
+                            <span class="tech-tag">Responsive Design</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/saritamukkani/DutyMonitor" class="btn">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- End Projects Section -->
+
+    <!-- Start Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-detail">
+                            <h4>Email</h4>
+                            <p>saritamukkani09@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-detail">
+                            <h4>Phone</h4>
+                            <p>+91 7977212586</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-detail">
+                            <h4>Location</h4>
+                            <p>Mumbai, Maharashtra, India</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+ <!-- <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form> 
+        </div>
+    </section>-->
+<style>
+    /* Contact Section */
+    .contact-info {
+    display: flex;
+    justify-content: space-around; /* Distribute items evenly */
+    align-items: center;
+    gap: 2rem; /* Space between items */
+}
+
+.contact-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex: 1; /* Equal width for all items */
+}
+
+.contact-icon {
+    font-size: 2rem;
+    color: #6c5ce7;
+    background: #f3f4ff;
+    padding: 15px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+}
+
+.contact-detail h4 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.contact-detail p {
+    color: #636e72;
+    font-size: 1rem;
+}
+/* Contact Section */
+</style>
+<!-- End Contact Section -->
+
+    <!-- Start Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">Port<span>folio</span></div>
+                <ul class="footer-links">
+                    <li class="footer-item"><a href="#home" class="footer-link">Home</a></li>
+                    <li class="footer-item"><a href="#about" class="footer-link">About</a></li>
+                    <li class="footer-item"><a href="#projects" class="footer-link">Projects</a></li>
+                    <li class="footer-item"><a href="#contact" class="footer-link">Contact</a></li>
+                </ul>
+                <ul class="social-links">
+                    <li class="social-item"><a href="https://www.linkedin.com/in/sarita-mukkani/" class="https://www.linkedin.com/in/sarita-mukkani/"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li class="social-item"><a href="https://github.com/saritamukkani" class="https://github.com/saritamukkani"><i class="fab fa-github"></i></a></li>
+                    <li class="social-item"><a href="https://x.com/_sm_o_" class="https://x.com/_sm_o_"><i class="fab fa-twitter"></i></a></li>
+                </ul>
+                <p class="copyright">&copy; 2025 Sarita Mukkani. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Start Back to Top Button -->
+    <div class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+    <!-- End Back to Top Button -->
+
+
+    <!-- Start JavaScript -->
+    <script>
+        // Toggle navigation menu for mobile
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Close menu when clicking a nav link
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+
+        // Sticky header on scroll
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('#header');
+            if (window.scrollY > 50) {
+                header.classList.add('sticky');
+            } else {
+                header.classList.remove('sticky');
+            }
+        });
+
+        // Active navigation link based on scroll position
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                
+                if (pageYOffset >= (sectionTop - sectionHeight / 3)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').substring(1) === current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // Back to top button
+        const backToTopButton = document.querySelector('.back-to-top');
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTopButton.classList.add('active');
+            } else {
+                backToTopButton.classList.remove('active');
+            }
+        });
+
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+    <!-- End JavaScript -->
+
+</body>
+</html>
