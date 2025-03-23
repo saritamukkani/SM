@@ -540,12 +540,13 @@
         </div>
     </section>-->
 <style>
-    /* Contact Section */
-    .contact-info {
+/* Contact Section */
+.contact-info {
     display: flex;
     justify-content: space-around; /* Distribute items evenly */
     align-items: center;
     gap: 2rem; /* Space between items */
+    flex-wrap: wrap; /* Ensures wrapping on smaller screens */
 }
 
 .contact-item {
@@ -554,6 +555,7 @@
     align-items: center;
     text-align: center;
     flex: 1; /* Equal width for all items */
+    min-width: 200px; /* Prevents shrinking too much */
 }
 
 .contact-icon {
@@ -568,6 +570,11 @@
     justify-content: center;
     width: 60px;
     height: 60px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.contact-icon:hover {
+    transform: scale(1.1);
 }
 
 .contact-detail h4 {
@@ -578,6 +585,20 @@
 .contact-detail p {
     color: #636e72;
     font-size: 1rem;
+}
+
+/* ✅ Make it Responsive */
+@media (max-width: 768px) {
+    .contact-info {
+        flex-direction: column; /* Stack items vertically on small screens */
+        align-items: center;
+    }
+
+    .contact-item {
+        width: 100%; /* Full width for better spacing */
+        max-width: 350px; /* Prevents items from stretching too much */
+        margin-bottom: 20px;
+    }
 }
 /* Contact Section */
 </style>
