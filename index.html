@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sarita's Portfolio | Web Developer & UI/UX Designer</title>
+    <title>Sarita's Portfolio | Cyber Security Analyst</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -13,97 +13,31 @@
     <header id="header">
         <div class="nav-container">
             <a href="#" class="logo">S<span>M</span></a>
-            <ul class="nav-menu">
-                <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
-                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
-                <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
-                <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
-                <li class="nav-item"><a href="#certifications" class="nav-link">Certifications</a></li>
-                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
-                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
-            <div class="hamburger">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
+            
+            <!-- Hamburger Menu -->
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            
+            <!-- Navigation Menu -->
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#education" class="nav-link">Education</a></li>
+                    <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
     <!-- End Header -->
-
-<!-- Start Nav Bar Responsive -->
- <style>/* Sidebar Navigation */
-    .nav-menu {
-        position: fixed;
-        top: 0;
-        right: -100%; /* Initially hidden on the right */
-        width: 250px;
-        height: 100vh;
-        background: white;
-        box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
-        padding: 20px;
-        transition: right 0.4s ease-in-out; /* Smooth transition */
-        z-index: 1000;
-    }
-    
-    /* Show Menu */
-    .nav-menu.active {
-        right: 0; /* Slide in from the right */
-    }
-    
-    /* Close Button */
-    .nav-close {
-        position: absolute;
-        top: 15px;
-        left: 15px; /* Move close button to left side */
-        font-size: 24px;
-        cursor: pointer;
-    }
-    
-    /* Navigation Links */
-    .nav-menu ul {
-        list-style: none;
-        padding: 0;
-        margin-top: 50px;
-    }
-    
-    .nav-menu ul li {
-        margin: 20px 0;
-    }
-    
-    .nav-menu ul li a {
-        text-decoration: none;
-        font-size: 18px;
-        color: #333;
-        transition: color 0.3s ease-in-out;
-    }
-    
-    .nav-menu ul li a:hover {
-        color: #6c63ff;
-    }
-    
-    /* Hamburger Icon */
-    .hamburger {
-        font-size: 28px;
-        cursor: pointer;
-        display: block;
-        position: fixed;
-        top: 20px;
-        right: 20px; /* Positioned on the right */
-        z-index: 1100;
-    }
-    
-    /* Responsive: Hide Sidebar on Large Screens */
-    @media (min-width: 1024px) {
-        .nav-menu {
-            width: 300px;
-        }
-    }
-    </style>
-
-<!-- End Nav Bar Responsive -->
-
 
     <!-- Start Hero Section -->
     <section id="home" class="hero">
@@ -111,193 +45,17 @@
             <div class="hero-content">
                 <div class="hero-text">
                     <h1 class="hero-name">Hi, I'm <span class="text-highlight">Sarita Mukkani</span></h1>
-                    <h2 class="hero-title">Web Developer & UI/UX Designer</h2>
-                    <p class="hero-description">I design and build user interfaces that are both beautiful and functional, ensuring seamless user experiences and enhanced usability.</p>
+                    <h2 class="hero-title">Cyber Security Analyst</h2>
+                    <p class="hero-description">I specialize in identifying vulnerabilities, conducting penetration testing, and implementing robust security measures to protect digital assets and ensure comprehensive cybersecurity resilience.</p>
                     <a href="#contact" class="btn hero-btn">Get In Touch</a>
                 </div>
                 <div class="hero-img">
-                    <img src="myimage.jpeg" alt="Profile Image"class="profile-image">
+                    <img src="https://images.pexels.com/photos/3861972/pexels-photo-3861972.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Profile Image" class="profile-image">
                 </div>
             </div>
         </div>
     </section>
-<style>
-   /* Profile Image */
-/* Hero Section */
-.hero {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh; /* Make it full height */
-    text-align: center;
-    background: linear-gradient(135deg, #f3f4ff 0%, #e9ecff 100%);
-    padding: 50px 0;
-}
-
-.hero-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap; /* Ensures content stacks properly on small screens */
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-.hero-text {
-    flex: 1;
-    text-align: left;
-    max-width: 600px;
-}
-
-.hero-name {
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: #2c3e50;
-}
-
-.text-highlight {
-    color: #6c5ce7;
-}
-
-.hero-title {
-    font-size: 1.8rem;
-    color: #2c3e50;
-    margin-top: 10px;
-}
-
-.hero-description {
-    font-size: 1.1rem;
-    color: #555;
-    margin-top: 15px;
-    line-height: 1.6;
-}
-
-/* Button Styling */
-.hero-btn {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 12px 24px;
-    background-color: #6c5ce7;
-    color: #fff;
-    font-weight: bold;
-    border-radius: 8px;
-    text-decoration: none;
-    transition: all 0.3s ease-in-out;
-}
-
-.hero-btn:hover {
-    background-color: #5750ec;
-}
-
-/* Profile Image */
-.hero-img {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.profile-image {
-    width: 250px; /* Default size for large screens */
-    height: 250px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 4px solid #6c5ce7;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-}
-
-/* Hover Effect */
-.profile-image:hover {
-    transform: scale(1.1);
-}
-
-/* ✅ Make it Fully Responsive */
-@media (max-width: 1024px) {
-    .hero-content {
-        flex-direction: column-reverse; /* Stack image below text */
-        text-align: center;
-    }
-
-    .hero-text {
-        text-align: center;
-    }
-
-    .profile-image {
-        width: 200px;
-        height: 200px;
-        margin-bottom: 20px;
-    }
-
-    .hero-name {
-        font-size: 2.2rem;
-    }
-
-    .hero-title {
-        font-size: 1.5rem;
-    }
-
-    .hero-description {
-        font-size: 1rem;
-    }
-}
-
-@media (max-width: 768px) {
-    .hero {
-        padding: 40px 0;
-    }
-
-    .profile-image {
-        width: 180px;
-        height: 180px;
-    }
-
-    .hero-name {
-        font-size: 2rem;
-    }
-
-    .hero-title {
-        font-size: 1.3rem;
-    }
-
-    .hero-description {
-        font-size: 1rem;
-    }
-
-    .hero-btn {
-        padding: 10px 20px;
-        font-size: 1rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .profile-image {
-        width: 150px;
-        height: 150px;
-    }
-
-    .hero-name {
-        font-size: 1.8rem;
-    }
-
-    .hero-title {
-        font-size: 1.2rem;
-    }
-
-    .hero-description {
-        font-size: 0.95rem;
-    }
-
-    .hero-btn {
-        padding: 8px 16px;
-        font-size: 0.9rem;
-    }
-}
-
-/* Profile Image */
-</style>
-<!-- End Hero Section -->
+    <!-- End Hero Section -->
 
     <!-- Start About Section -->
     <section id="about" class="section">
@@ -305,124 +63,53 @@
             <h2 class="section-title">About Me</h2>
             <div class="about-container">
                 <div class="about-content">
-                    <h3 class="about-title">Passionate Tech Professional</h3>
-                    <p class="about-text">I am a UI/UX Designer & Web Developer skilled in HTML, CSS, JavaScript, and design tools like Figma, Canva, and Wix. I specialize in creating responsive, user-friendly interfaces while enhancing usability. With experience in software testing, documentation, and user research, I focus on blending design with functionality to build impactful digital solutions. 🚀✨</p>
+                    <h3 class="about-title">Passionate Cybersecurity Professional</h3>
+                    <p class="about-text">I am a Cyber Security Analyst specializing in vulnerability assessment and penetration testing (VAPT). With expertise in web application security, OWASP Top 10, and security tools like Burp Suite, Nmap, and Nikto, I focus on identifying security vulnerabilities and implementing robust protection measures. My background in UI/UX design and web development provides me with a unique perspective on securing digital experiences from both technical and user-centric standpoints. 🔒🛡️</p>
                     <a href="#skills" class="btn">Explore My Skills</a>
                 </div>
-                <!-- <div class="about-img">
-                    <img src="/api/placeholder/500/300" alt="About Me">
-                </div> -->
             </div>
         </div>
     </section>
-<style>
-/* About Section */
-    #about {
-        background-color: #f8f9fc; /* Light background */
-        padding: 80px 0;
-        /* text-align: center; */
-    }
-    
-    .section-title {
-        font-size: 24px;
-        font-weight: bold;
-        color: #333;
-        text-transform: uppercase;
-        position: relative;
-        display: inline-block;
-    }
-    
-    .section-title::after {
-        content: "";
-        display: block;
-        width: 50px;
-        height: 3px;
-        background-color: #6c63ff; /* Highlight color */
-        margin: 8px auto 0;
-        border-radius: 5px;
-    }
-    
-    .about-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        max-width: 100%;
-        margin: 0 auto;
-        text-align: center;
-    }
-    
-    .about-content {
-        background: white;
-        padding: 40px;
-        border-radius: 12px;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    }
-    
-    .about-title {
-        font-size: 28px;
-        font-weight: bold;
-        color: #222;
-        margin-bottom: 15px;
-    }
-    
-    .about-text {
-        font-size: 16px;
-        color: #555;
-        line-height: 1.8;
-    }
-    
-    .btn {
-        display: inline-block;
-        margin-top: 20px;
-        padding: 12px 24px;
-        background-color: #6c63ff;
-        color: #fff;
-        font-weight: bold;
-        border-radius: 8px;
-        text-decoration: none;
-        transition: 0.3s ease-in-out;
-    }
-    
-    .btn:hover {
-        background-color: #8c88d49e;
-    }
-    /* About Section */
-    </style>
-    <!-- Start About Section -->
-
+    <!-- End About Section -->
 
     <!-- Start Skills Section -->
-    <section id="skills" class="section" style="background-color: #f5f7fa;">
+    <section id="skills" class="section">
         <div class="container">
             <h2 class="section-title">My Skills</h2>
             <div class="skills-container">
+                <div class="skill-category">
+                    <h4><i class="fas fa-shield-alt"></i> Cybersecurity & VAPT</h4>
+                    <ul class="skill-list">
+                        <li class="skill-item">OWASP Top 10</li>
+                        <li class="skill-item">Burp Suite</li>
+                        <li class="skill-item">Nmap & Nikto</li>
+                        <li class="skill-item">Vulnerability Assessment</li>
+                        <li class="skill-item">Penetration Testing</li>
+                        <li class="skill-item">Web Application Security</li>
+                    </ul>
+                </div>
                 <div class="skill-category">
                     <h4><i class="fas fa-code"></i> Programming Languages</h4>
                     <ul class="skill-list">
                         <li class="skill-item">HTML5</li>
                         <li class="skill-item">CSS</li>
                         <li class="skill-item">JavaScript</li>
+                        <li class="skill-item">Python (Security Scripts)</li>
                     </ul>
                 </div>
                 <div class="skill-category">
-                    <h4><i class="fas fa-database"></i> Database Management</h4>
+                    <h4><i class="fas fa-database"></i> Database & Tools</h4>
                     <ul class="skill-list">
                         <li class="skill-item">Basic's of MySQL</li>
                         <li class="skill-item">Basic's of Excel</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h4><i class="fas fa-pencil-ruler"></i> UI/UX Tools</h4>
-                    <ul class="skill-list">
-                        <li class="skill-item">Figma</li>
-                        <li class="skill-item">Canva</li>
-                        <li class="skill-item">Wix</li>
+                        <li class="skill-item">Security Documentation</li>
+                        <li class="skill-item">PoC Development</li>
                     </ul>
                 </div>
                 <div class="skill-category">
                     <h4><i class="fas fa-brain"></i> Soft Skills</h4>
                     <ul class="skill-list">
+                        <li class="skill-item">Security Risk Analysis</li>
                         <li class="skill-item">Problem-solving</li>
                         <li class="skill-item">Analytical Thinking</li>
                         <li class="skill-item">Team Collaboration</li>
@@ -431,79 +118,40 @@
             </div>
         </div>
     </section>
-<style>
-/* Skills Section */
-    #skills {
-        background-color: #f5f7fa; /* Light background */
-        padding: 80px 0;
-        /* text-align: center; */
-    }
-    
-    .section-title {
-        font-size: 24px;
-        font-weight: bold;
-        color: #333;
-        text-transform: uppercase;
-        position: relative;
-        display: inline-block;
-    }
-    
-    .section-title::after {
-        content: "";
-        display: block;
-        width: 50px;
-        height: 3px;
-        background-color: #6c63ff; /* Accent color */
-        margin: 8px auto 0;
-        border-radius: 5px;
-    }
-    
-    .skill-category:hover {
-        transform: translateY(-5px);
-    }
-    
-    .skill-category h3 {
-        font-size: 20px;
-        font-weight: bold;
-        color: #222;
-        margin-bottom: 15px;
-        display: flex;
-        align-items: center;
-        gap: 8px;
-        justify-content: center;
-    }
-    
-    .skill-category h3 i {
-        color: #6c63ff; /* Icon color */
-        font-size: 22px;
-    }
-    
-    .skill-list {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-    }
-    
-    
-    .skill-item:hover {
-        background: #dce3f1;
-        color: #333;
-    }
-/* Skills Section */
-    </style>
-<!-- Skills Section -->
+    <!-- End Skills Section -->
 
     <!-- Start Experience Section -->
     <section id="experience" class="section">
         <div class="container">
             <h2 class="section-title">Work Experience</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <div class="timeline-date">Jan 2025 - March 2025</div>
-                        <h3 class="timeline-title">Web Developer and UI/UX Intern</h3>
-                        <h4>Fitisatn</h4>
-                        <div class="timeline-description">
+            <div class="experience-container">
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <div class="experience-date">April 2025 - Present</div>
+                        <div class="experience-status">Current</div>
+                    </div>
+                    <div class="experience-content">
+                        <h3 class="experience-title">VAPT Intern</h3>
+                        <h4 class="experience-company">Astra Cybertech | Mumbai</h4>
+                        <div class="experience-description">
+                            <ul>
+                                <li>Conducting web application security testing using OWASP Top 10 and custom checklists.</li>
+                                <li>Identifying vulnerabilities, creating PoCs with mitigation steps, and leveraging tools like Burp Suite, Nmap, and Nikto.</li>
+                                <li>Collaborating on client projects and gaining hands-on experience in end-to-end VAPT methodologies.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <div class="experience-date">Jan 2025 - March 2025</div>
+                        <div class="experience-status">Completed</div>
+                    </div>
+                    <div class="experience-content">
+                        <h3 class="experience-title">Web Developer and UI/UX Intern</h3>
+                        <h4 class="experience-company">Fitisatn</h4>
+                        <div class="experience-description">
                             <ul>
                                 <li>Designed website UI/UX and documentation for an upcoming application launch.</li>
                                 <li>Proposed usability improvements based on user feedback.</li>
@@ -512,12 +160,16 @@
                         </div>
                     </div>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <div class="timeline-date">May 2024 - Aug 2024</div>
-                        <h3 class="timeline-title">Software Testing and UI/UX Intern</h3>
-                        <h4>Invizio Solutions</h4>
-                        <div class="timeline-description">
+
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <div class="experience-date">May 2024 - Aug 2024</div>
+                        <div class="experience-status">Completed</div>
+                    </div>
+                    <div class="experience-content">
+                        <h3 class="experience-title">Software Testing and UI/UX Intern</h3>
+                        <h4 class="experience-company">Invizio Solutions</h4>
+                        <div class="experience-description">
                             <ul>
                                 <li>Conducted comprehensive application testing, created detailed test cases, and tracked defects using Excel.</li>
                                 <li>Proposed usability improvements based on user feedback.</li>
@@ -526,12 +178,16 @@
                         </div>
                     </div>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <div class="timeline-date">Dec 2023 - Feb 2024</div>
-                        <h3 class="timeline-title">UI/UX Intern</h3>
-                        <h4>Engaze</h4>
-                        <div class="timeline-description">
+
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <div class="experience-date">Dec 2023 - Feb 2024</div>
+                        <div class="experience-status">Completed</div>
+                    </div>
+                    <div class="experience-content">
+                        <h3 class="experience-title">UI/UX Intern</h3>
+                        <h4 class="experience-company">Engaze</h4>
+                        <div class="experience-description">
                             <ul>
                                 <li>Designed wireframes and interactive prototypes using <strong>Figma</strong> and <strong>Canva</strong>.</li>
                                 <li>Ensured seamless user experience by aligning designs with user needs and feedback.</li>
@@ -539,12 +195,16 @@
                         </div>
                     </div>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <div class="timeline-date">Aug 2021 - Sep 2021</div>
-                        <h3 class="timeline-title">Web Developer Intern</h3>
-                        <h4>Sahu Technologies Pvt. Ltd.</h4>
-                        <div class="timeline-description">
+
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <div class="experience-date">Aug 2021 - Sep 2021</div>
+                        <div class="experience-status">Completed</div>
+                    </div>
+                    <div class="experience-content">
+                        <h3 class="experience-title">Web Developer Intern</h3>
+                        <h4 class="experience-company">Sahu Technologies Pvt. Ltd.</h4>
+                        <div class="experience-description">
                             <ul>
                                 <li>Assisted in developing web modules using <strong>HTML and CSS</strong>.</li>
                                 <li>Conducted software testing to ensure <strong>cross-browser compatibility</strong>.</li>
@@ -558,7 +218,7 @@
     <!-- End Experience Section -->
 
     <!-- Start Education Section -->
-    <section id="education" class="section" style="background-color: #f5f7fa;">
+    <section id="education" class="section">
         <div class="container">
             <h2 class="section-title">Education</h2>
             <div class="education-container">
@@ -574,16 +234,10 @@
                     <p class="education-years">2019 - 2022</p>
                     <p class="education-grade">Percentage: 85.94%</p>
                 </div>
-                <!-- <div class="education-item">
-                    <h3 class="education-degree">High School Education</h3>
-                    <p class="education-school">Fatima High School</p>
-                    <p class="education-years">2014 - 2017</p>
-                    <p class="education-grade">Percentage: 82%</p>
-                </div> -->
             </div>
         </div>
     </section>
-    <!-- Start Education Section -->
+    <!-- End Education Section -->
 
     <!-- Start Certifications Section -->
     <section id="certifications" class="section">
@@ -603,7 +257,7 @@
                 <div class="certification-item">
                     <h3 class="certification-title">SheCodes Hackathon<br> Certificate of Appreciation </h3>
                     <p class="certification-date">Bangalore - June 2024</p>
-                    <p>Developed Project ”She-Shield a hardware device developed using IoT for women's safety ” on June 14-15, 2024.</p>
+                    <p>Developed Project "She-Shield a hardware device developed using IoT for women's safety " on June 14-15, 2024.</p>
                 </div>
                 <div class="certification-item">
                     <h3 class="certification-title">Google Developers Student Club <br> UI/UX Team Member</h3>
@@ -613,28 +267,27 @@
                 </div>
                 <div class="certification-item">
                     <h3 class="certification-title">Vidyalankar Internal Hackathon <br> Second Runner-Up</h3>
-                    <p class="certification-date">Mumbai - March 202</p>
+                    <p class="certification-date">Mumbai - March 2022</p>
                     <p>Solved problem statement provided by sponsoring company Soft Scribble Pvt Ltd.</p>
                 </div>
                 <div class="certification-item">
                     <h3 class="certification-title">ICSTEMSD 2024-2nd Edition</h3>
-                    <p class="certification-date">Mumbai - Feburary 2024</p>
+                    <p class="certification-date">Mumbai - February 2024</p>
                     <p> Presented a paper titled "DUTY MONITOR: Monitoring System Using NFC, published in ISTE Online Special Issue No. 2, Vol. 47 on February 15-16, 2024.</p>
                 </div>
             </div>
         </div>
     </section>
-    <!-- Start Certifications Section -->
-
+    <!-- End Certifications Section -->
 
     <!-- Start Projects Section -->
-    <section id="projects" class="section" style="background-color: #f5f7fa;">
+    <section id="projects" class="section">
         <div class="container">
             <h2 class="section-title">My Projects</h2>
             <div class="projects-container">
                 <div class="project-card">
                     <div class="project-img">
-                        <img src="farmer.jpeg" alt="AgroDew">
+                        <img src="https://images.pexels.com/photos/1072824/pexels-photo-1072824.jpeg?auto=compress&cs=tinysrgb&w=400" alt="AgroDew">
                     </div>
                     <div class="project-content">
                         <h3 class="project-title">AgroDew</h3>
@@ -646,8 +299,7 @@
                             <span class="tech-tag">Embedded Systems</span>
                             <span class="tech-tag">Wireless Communication</span>
                             <span class="tech-tag">Automation</span>
-                            <span class="tech-tag">Sensor Integration/span>
-
+                            <span class="tech-tag">Sensor Integration</span>
                         </div>
                         <div class="project-links">
                             <a href="https://www.youtube.com/@AgroDew/videos" class="btn">View Demo</a>
@@ -656,7 +308,7 @@
                 </div>
                 <div class="project-card">
                     <div class="project-img">
-                        <img src="womens.jpeg" alt="SheShield">
+                        <img src="https://images.pexels.com/photos/5483071/pexels-photo-5483071.jpeg?auto=compress&cs=tinysrgb&w=400" alt="SheShield">
                     </div>
                     <div class="project-content">
                         <h3 class="project-title">SheShield</h3>
@@ -676,27 +328,9 @@
                         </div>
                     </div>
                 </div>
-                <!-- <div class="project-card">
-                    <div class="project-img">
-                        <img src="/api/placeholder/350/200" alt="Task Manager App">
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Task Manager Web App</h3>
-                        <p class="project-description">Developed a task management application that allows users to create, organize, and track their daily tasks with reminder functionality.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">HTML5</span>
-                            <span class="tech-tag">CSS3</span>
-                            <span class="tech-tag">JavaScript</span>
-                            <span class="tech-tag">Local Storage</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="btn">View Demo</a>
-                        </div>
-                    </div>
-                </div> -->
                 <div class="project-card">
                     <div class="project-img">
-                        <img src="Duty.jpeg" alt="Duty Monitor">
+                        <img src="https://images.pexels.com/photos/159888/pexels-photo-159888.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Duty Monitor">
                     </div>
                     <div class="project-content">
                         <h3 class="project-title">Duty Monitor</h3>
@@ -717,7 +351,7 @@
             </div>
         </div>
     </section>
-<!-- End Projects Section -->
+    <!-- End Projects Section -->
 
     <!-- Start Contact Section -->
     <section id="contact" class="section">
@@ -756,87 +390,7 @@
             </div>
         </div>
     </section>
- <!-- <form class="contact-form">
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Your Name" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" class="form-control" placeholder="Your Email" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Subject" required>
-                    </div>
-                    <div class="form-group">
-                        <textarea class="form-control" placeholder="Your Message" required></textarea>
-                    </div>
-                    <button type="submit" class="btn">Send Message</button>
-                </form> 
-        </div>
-    </section>-->
-<style>
-/* Contact Section */
-.contact-info {
-    display: flex;
-    justify-content: space-around; /* Distribute items evenly */
-    align-items: center;
-    gap: 2rem; /* Space between items */
-    flex-wrap: wrap; /* Ensures wrapping on smaller screens */
-}
-
-.contact-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    flex: 1; /* Equal width for all items */
-    min-width: 200px; /* Prevents shrinking too much */
-}
-
-.contact-icon {
-    font-size: 2rem;
-    color: #6c5ce7;
-    background: #f3f4ff;
-    padding: 15px;
-    border-radius: 50%;
-    margin-bottom: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 60px;
-    height: 60px;
-    transition: transform 0.3s ease-in-out;
-}
-
-.contact-icon:hover {
-    transform: scale(1.1);
-}
-
-.contact-detail h4 {
-    font-size: 1.2rem;
-    margin-bottom: 5px;
-}
-
-.contact-detail p {
-    color: #636e72;
-    font-size: 1rem;
-}
-
-/* ✅ Make it Responsive */
-@media (max-width: 768px) {
-    .contact-info {
-        flex-direction: column; /* Stack items vertically on small screens */
-        align-items: center;
-    }
-
-    .contact-item {
-        width: 100%; /* Full width for better spacing */
-        max-width: 350px; /* Prevents items from stretching too much */
-        margin-bottom: 20px;
-    }
-}
-/* Contact Section */
-</style>
-<!-- End Contact Section -->
+    <!-- End Contact Section -->
 
     <!-- Start Footer -->
     <footer class="footer">
@@ -850,9 +404,9 @@
                     <li class="footer-item"><a href="#contact" class="footer-link">Contact</a></li>
                 </ul>
                 <ul class="social-links">
-                    <li class="social-item"><a href="https://www.linkedin.com/in/sarita-mukkani/" class="https://www.linkedin.com/in/sarita-mukkani/"><i class="fab fa-linkedin-in"></i></a></li>
-                    <li class="social-item"><a href="https://github.com/saritamukkani" class="https://github.com/saritamukkani"><i class="fab fa-github"></i></a></li>
-                    <li class="social-item"><a href="https://x.com/_sm_o_" class="https://x.com/_sm_o_"><i class="fab fa-twitter"></i></a></li>
+                    <li class="social-item"><a href="https://www.linkedin.com/in/sarita-mukkani/"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li class="social-item"><a href="https://github.com/saritamukkani"><i class="fab fa-github"></i></a></li>
+                    <li class="social-item"><a href="https://x.com/_sm_o_"><i class="fab fa-twitter"></i></a></li>
                 </ul>
                 <p class="copyright">&copy; 2025 Sarita Mukkani. All Rights Reserved.</p>
             </div>
@@ -865,80 +419,6 @@
         <i class="fas fa-arrow-up"></i>
     </div>
     <!-- End Back to Top Button -->
-
-
-    <!-- Start JavaScript -->
-    <script>
-        // Toggle navigation menu for mobile
-        const hamburger = document.querySelector('.hamburger');
-        const navMenu = document.querySelector('.nav-menu');
-
-        hamburger.addEventListener('click', () => {
-            hamburger.classList.toggle('active');
-            navMenu.classList.toggle('active');
-        });
-
-        // Close menu when clicking a nav link
-        document.querySelectorAll('.nav-link').forEach(link => {
-            link.addEventListener('click', () => {
-                hamburger.classList.remove('active');
-                navMenu.classList.remove('active');
-            });
-        });
-
-        // Sticky header on scroll
-        window.addEventListener('scroll', () => {
-            const header = document.querySelector('#header');
-            if (window.scrollY > 50) {
-                header.classList.add('sticky');
-            } else {
-                header.classList.remove('sticky');
-            }
-        });
-
-        // Active navigation link based on scroll position
-        const sections = document.querySelectorAll('section');
-        const navLinks = document.querySelectorAll('.nav-link');
-
-        window.addEventListener('scroll', () => {
-            let current = '';
-            
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop;
-                const sectionHeight = section.clientHeight;
-                
-                if (pageYOffset >= (sectionTop - sectionHeight / 3)) {
-                    current = section.getAttribute('id');
-                }
-            });
-
-            navLinks.forEach(link => {
-                link.classList.remove('active');
-                if (link.getAttribute('href').substring(1) === current) {
-                    link.classList.add('active');
-                }
-            });
-        });
-
-        // Back to top button
-        const backToTopButton = document.querySelector('.back-to-top');
-        
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 300) {
-                backToTopButton.classList.add('active');
-            } else {
-                backToTopButton.classList.remove('active');
-            }
-        });
-
-        backToTopButton.addEventListener('click', () => {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        });
-    </script>
-    <!-- End JavaScript -->
 
 </body>
 </html>
